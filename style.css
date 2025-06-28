@@ -57,8 +57,8 @@ body {
   height: 350px;
   width: 250px;
   position: absolute;
-  top: 60%;
-  right: 0%;
+  top: 138%;
+  right: 4%;
   transform: translate(0, -50%);
   background-image: url(https://images.unsplash.com/photo-1529680459049-bf0340fa0755?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-size: cover;
@@ -85,7 +85,76 @@ body {
 }
 
 .ver {
-  writing-mode: vertical-rl; /* Makes text go top to bottom, right to left */
+  writing-mode: vertical-rl;
   text-orientation: upright;
-  font-size: 44px; /* Optional - change as needed */
+  font-size: 44px;
+}
+
+/*Vertical-Nav Bar*/
+
+.vertical-navbar {
+  height: 100%;
+  width: 150px;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+}
+
+.vertical-navbar a {
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.vertical-navbar a:hover {
+  background-color: #575757;
+}
+
+/* About & Contact*/
+.about-section,
+.contact-section {
+  margin-left: 148px; /* Same as content area margin */
+  padding: 40px 20px;
+  background-color: #a1799498;
+  color: #333;
+  /* border-bottom: 1px solid #ddd; */
+}
+
+.about-section h2,
+.contact-section h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.about-section p,
+.contact-section p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.contact-section ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.contact-section li {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.contact-section a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.contact-section a:hover {
+  text-decoration: underline;
 }
